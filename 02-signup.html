@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurplusLink - Create your account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="02-signup.css">
+</head>
+<body>
+    <div class="signup-layout">
+        <div class="topbar">
+            <a href="01-login.html" class="back-link desktop-hidden">
+                <img src="./assets/chevron-left.svg" alt="Back">
+            </a>
+            <div class="logo">
+                <img src="./assets/logo.png" alt="SurplusLink Logo" class="logo-icon">
+                SurplusLink
+            </div>
+            <a href="01-login.html" class="brand-link font-semibold mobile-hidden">Sign in</a>
+        </div>
+        
+        <div class="signup-container">
+            <div class="header-text">
+                <h1 class="display-title">Create your account</h1>
+                <p class="subtitle">Join SurplusLink and help reduce food waste, share good food.</p>
+            </div>
+            
+            <div class="role-selector">
+                <div class="role-card">
+                    <img src="./assets/store-icon.svg" alt="Provider" class="role-icon">
+                    <h3>I'm a Food Provider</h3>
+                    <p>List surplus food from your business or organization</p>
+                </div>
+                <div class="role-card selected">
+                    <div class="check-badge">
+                        <img src="./assets/check-white.svg" alt="Selected">
+                    </div>
+                    <img src="./assets/users-icon.svg" alt="Recipient" class="role-icon">
+                    <h3>I'm a Recipient</h3>
+                    <p>Receive surplus food for your community or organization</p>
+                </div>
+            </div>
+            
+            <form class="signup-form" action="03-feed.html">
+                <div class="field">
+                    <label>Recipient type</label>
+                    <select class="select">
+                        <option>Select recipient type</option>
+                    </select>
+                </div>
+                
+                <div class="field">
+                    <label>Full name</label>
+                    <input type="text" class="input" placeholder="Enter your full name">
+                </div>
+                
+                <div class="field">
+                    <label>Email address</label>
+                    <input type="email" class="input" placeholder="Enter your email address">
+                </div>
+                
+                <div class="field">
+                    <label>Phone number</label>
+                    <input type="tel" class="input" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="field">
+                    <label>Organisation name</label>
+                    <input type="text" class="input" placeholder="Enter your organisation name">
+                </div>
+                
+                <div class="field">
+                    <label>Registration number (if applicable)</label>
+                    <input type="text" class="input" placeholder="Enter registration number">
+                </div>
+                
+                <div class="field">
+                    <label>Upload verification document</label>
+                    <div class="upload-zone">
+                        <img src="./assets/upload-icon.svg" alt="Upload">
+                        <div class="upload-text">
+                            <span class="upload-title">Click to upload or drag and drop</span><br>
+                            <span class="upload-subtitle">PDF, JPG, PNG (Max 5MB)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <label class="checkbox-label terms-label">
+                    <input type="checkbox">
+                    <span>I agree to the <a href="#" class="brand-link">Terms of Service</a> and <a href="#" class="brand-link">Privacy Policy</a>.</span>
+                </label>
+                
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Create account</button>
+                
+                <p class="login-prompt">
+                    Already have an account? <a href="01-login.html" class="brand-link font-semibold">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
