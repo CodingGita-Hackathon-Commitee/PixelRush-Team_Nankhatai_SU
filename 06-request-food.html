@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurplusLink - Request Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="06-request-food.css">
+</head>
+<body>
+    <header class="topbar desktop-only">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="SurplusLink Logo" class="logo-icon">
+            SurplusLink
+        </div>
+        <nav class="desktop-nav">
+            <a href="03-feed.html">Home</a>
+            <a href="#">Listings</a>
+            <a href="#" class="active">Request</a>
+            <a href="#">Impact</a>
+            <a href="#">Dashboard</a>
+        </nav>
+        <div class="user-menu">
+            <img src="./assets/bell.svg" alt="Notifications">
+            <div class="avatar-dropdown">
+                <div class="avatar-circle green-bg">NG</div>
+                <span>Nayi Disha NGO</span>
+                <img src="./assets/chevron-down.svg" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-header mobile-only">
+        <a href="04-listing-detail.html" class="back-link-mobile">
+            <img src="./assets/arrow-left.svg" alt="Back"> Back to listings
+        </a>
+        <span class="step-text">Step 2 of 2</span>
+    </div>
+
+    <main class="container page-layout">
+        <div class="content-left">
+            <div class="verification-card">
+                <div class="verification-header">
+                    <h3>Your verification</h3>
+                    <span class="badge-verified">✓ Verified NGO</span>
+                </div>
+                <div class="ngo-info">
+                    <div class="avatar-circle-large green-bg">O</div>
+                    <div>
+                        <div class="ngo-name">Nayi Disha Foundation</div>
+                        <p class="ngo-desc">Working towards a hunger-free and healthier community.</p>
+                    </div>
+                </div>
+                <div class="ngo-meta">
+                    <div class="meta-item">
+                        <img src="./assets/file-text.svg" alt="ID">
+                        <div>
+                            <span>Organisation Registration ID</span>
+                            <strong>IND-GJ-2023-4587</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <img src="./assets/calendar.svg" alt="Date">
+                        <div>
+                            <span>Verified on</span>
+                            <strong>12 Aug 2024</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="request-form-card">
+                <h3>Request this food</h3>
+                <p class="helper mb-24">Please provide the details below to request this food from the donor.</p>
+                
+                <form action="07-reservation-qr.html">
+                    <div class="field mb-24">
+                        <label>Quantity needed (packs)</label>
+                        <div class="qty-stepper">
+                            <button type="button" class="stepper-btn">-</button>
+                            <input type="number" class="stepper-input" value="6">
+                            <button type="button" class="stepper-btn">+</button>
+                            <span class="stepper-max">max 18 ⓘ</span>
+                        </div>
+                    </div>
+                    
+                    <div class="field mb-16">
+                        <label>Who will collect?</label>
+                        <div class="input-with-icon">
+                            <img src="./assets/user.svg" alt="User">
+                            <input type="text" class="input" value="Rohan Mehta">
+                        </div>
+                    </div>
+                    
+                    <div class="field mb-16">
+                        <label>Phone number</label>
+                        <div class="input-with-icon">
+                            <img src="./assets/phone.svg" alt="Phone">
+                            <input type="tel" class="input" value="+91 98765 43210">
+                        </div>
+                    </div>
+                    
+                    <div class="field mb-24">
+                        <label>Pickup time</label>
+                        <div class="input-with-icon">
+                            <img src="./assets/clock.svg" alt="Clock">
+                            <select class="select pl-40">
+                                <option>Today, 4:00 PM – 5:00 PM (within pickup window)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block btn-lg flex-center">
+                        <img src="./assets/send.svg" alt="Send" class="btn-icon"> Send request
+                    </button>
+                </form>
+            </div>
+            
+            <div class="footer-text mobile-only mt-24">
+                © 2025 SurplusLink. Committed to zero hunger & food sustainability.
+            </div>
+        </div>
+
+        <div class="content-right">
+            <!-- Mobile Listing Summary goes first on mobile, but second on desktop. We can use flex order on mobile -->
+            <div class="status-card" id="desktop-status">
+                <h3>Request status</h3>
+                <p class="helper mb-24">Track the status of your request for this listing.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-step active">
+                        <div class="step-icon blue-bg">
+                            <div class="inner-dot"></div>
+                        </div>
+                        <div class="step-content current-step">
+                            <div class="step-header">
+                                <img src="./assets/clock-blue.svg" alt="Pending"> <strong>Pending</strong>
+                                <span class="badge-current">CURRENT</span>
+                            </div>
+                            <p>Your request has been sent to Sunrise Banquet. You'll be notified immediately once they respond.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="step-icon">
+                            <div class="inner-dot gray"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header gray-text">
+                                <img src="./assets/check-gray.svg" alt="Approved"> Approved
+                            </div>
+                            <p>Receive collection code and coordinator contact details upon donor approval.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step last">
+                        <div class="step-icon">
+                            <div class="inner-dot gray"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header gray-text">
+                                <img src="./assets/x-gray.svg" alt="Declined"> Declined
+                            </div>
+                            <p>Automatic alert if the donor is unable to fulfill this request.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card" id="desktop-summary">
+                <h3 class="desktop-only mb-16">Listing summary</h3>
+                <div class="summary-content">
+                    <div class="summary-img-wrapper">
+                        <div class="placeholder-img-small">
+                            <img src="./assets/image-icon.svg" alt="Img">
+                        </div>
+                    </div>
+                    <div class="summary-details">
+                        <div class="summary-header">
+                            <h4>Cooked Vegetarian Meals</h4>
+                            <div class="chip chip-fresh"><img src="./assets/clock-green.svg" alt="Time"> 2h 15m left</div>
+                        </div>
+                        <p class="summary-desc">Freshly prepared vegetarian meals (rice, dal, vegetables) available for immediate pickup.</p>
+                        <ul class="summary-meta-list">
+                            <li><img src="./assets/map-pin.svg" alt="Map"> Sunrise Banquet, Surat</li>
+                            <li><img src="./assets/box.svg" alt="Box"> <strong>18 packs</strong> available for claim</li>
+                            <li><img src="./assets/clock.svg" alt="Clock"> Pickup window: 3:00 PM – 6:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="mobile-bottom-bar mobile-only">
+        <a href="07-reservation-qr.html" class="btn btn-primary btn-block btn-lg flex-center">
+            <img src="./assets/send.svg" alt="Send" class="btn-icon"> Send request
+        </a>
+    </div>
+</body>
+</html>
