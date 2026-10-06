@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SurplusLink - Handover Feedback</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="08-handover-feedback.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topbar">
+<div class="logo">
+<img alt="SurplusLink Logo" class="logo-icon" src="./assets/08-handover-feedback/surpluslink-logo-logo.png"/>
+            SurplusLink
+        </div>
+<nav class="desktop-nav">
+<a href="03-feed.html">Feed</a>
+<a href="12-my-listings.html">My Listings</a>
+<a href="05-create-listing.html">Create Listing</a>
+<a href="09-provider-analytics.html">Analytics</a>
+<a href="11-leaderboard.html">Leaderboard</a>
+</nav>
+<div class="user-menu desktop-only">
+<img alt="Profile" class="avatar" src="./assets/08-handover-feedback/profile-avatar.png"/>
+<img alt="Menu" class="chevron" src="./assets/08-handover-feedback/menu-icon.svg"/>
+</div>
+<div class="mobile-menu mobile-only">
+<img alt="Profile" class="avatar" src="./assets/08-handover-feedback/profile-avatar-1.png"/>
+</div>
+</header>
+<div class="dashboard-layout">
+<!-- Sidebar Navigation -->
+<aside class="sidebar desktop-only">
+<a class="btn btn-primary btn-block mb-24" href="05-create-listing.html">&uparrow; Add surplus food</a>
+<nav class="side-nav">
+<a href="#"><img alt="Dashboard" src="./assets/08-handover-feedback/dashboard-icon.svg"/> Dashboard</a>
+<a href="12-my-listings.html"><img alt="Listings" src="./assets/08-handover-feedback/listings-icon.svg"/> My listings</a>
+<a href="#"><img alt="Requests" src="./assets/08-handover-feedback/requests-icon.svg"/> Requests</a>
+<a href="#"><img alt="Reservations" src="./assets/08-handover-feedback/reservations-icon.svg"/> Reservations</a>
+<a class="active" href="#"><img alt="Handover" src="./assets/08-handover-feedback/handover-icon.svg"/> Handover</a>
+<a href="09-provider-analytics.html"><img alt="Analytics" src="./assets/08-handover-feedback/analytics-icon.svg"/> Analytics</a>
+<a href="#"><img alt="Messages" src="./assets/08-handover-feedback/messages-icon.svg"/> Messages</a>
+<a href="#"><img alt="Profile" src="./assets/08-handover-feedback/profile-icon.svg"/> Profile</a>
+<a href="#"><img alt="Settings" src="./assets/08-handover-feedback/settings-icon.svg"/> Settings</a>
+</nav>
+<div class="sidebar-footer">
+<div class="stat-mini">
+<img alt="Leaf" src="./assets/08-handover-feedback/leaf-icon.svg"/>
+<div>
+<div class="stat-val">1,248</div>
+<div class="stat-label">Meals saved</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="main-content">
+<div class="content-grid">
+<!-- Left Column (Feedback) -->
+<div class="card feedback-card">
+<div class="success-header">
+<div class="success-icon">
+<img alt="Success" src="./assets/08-handover-feedback/success-icon.svg"/>
+</div>
+<h2>Pickup completed</h2>
+<p>Thank you! You helped reduce food waste.</p>
+</div>
+<div class="section">
+<h4 class="section-title">Handover confirmations</h4>
+<div class="confirmations-row">
+<div class="confirm-box success">
+<img alt="Check" src="./assets/08-handover-feedback/check-icon.svg"/>
+<div>
+<strong>Provider confirmed</strong>
+<span>6:42 PM</span>
+</div>
+</div>
+<div class="confirm-box success">
+<img alt="Check" src="./assets/08-handover-feedback/check-icon-1.svg"/>
+<div>
+<strong>Recipient confirmed</strong>
+<span>6:42 PM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="section mt-32">
+<h4 class="section-title">How was the food quality?</h4>
+<div class="rating-group">
+<button class="rating-btn">Poor</button>
+<button class="rating-btn">Okay</button>
+<button class="rating-btn">Good</button>
+<button class="rating-btn">Great</button>
+<button class="rating-btn active">Excellent</button>
+</div>
+</div>
+<div class="section mt-24">
+<h4 class="section-title">Add an optional comment</h4>
+<textarea class="textarea" placeholder="Share your experience (optional)..."></textarea>
+</div>
+<button class="btn btn-primary btn-block btn-lg mt-24">Submit feedback</button>
+</div>
+<!-- Right Column -->
+<div class="right-col">
+<div class="card expired-card text-center">
+<h3 class="mb-16">Expired / missed</h3>
+<div class="clock-icon-large mb-16">
+<img alt="Clock" src="./assets/08-handover-feedback/clock-icon.svg"/>
+</div>
+<div class="chip chip-gray mb-16">Pickup window ended</div>
+<p class="helper mb-24">The pickup window has ended. You can relist the food if it's still available.</p>
+<button class="btn btn-secondary btn-block">Relist food</button>
+</div>
+<div class="card mini-stat-card mobile-only mt-16">
+<div class="stat-mini">
+<img alt="Leaf" src="./assets/08-handover-feedback/leaf-icon-1.svg"/>
+<div>
+<div class="stat-label uppercase">Meals Saved</div>
+<div class="stat-val text-brand">1,248</div>
+</div>
+<div class="badge-fresh ml-auto">Great job!</div>
+</div>
+</div>
+<div class="footer-links mt-32">
+<a href="#">Privacy policy</a> • <a href="#">Terms</a> • <a href="#">Help</a>
+<p>© 2025 SurplusLink. All rights reserved.</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Mobile Bottom Tab Bar -->
+<nav class="bottom-tab-bar mobile-only">
+<a class="tab-item" href="03-feed.html">
+<img alt="Feed" src="./assets/08-handover-feedback/feed-icon.svg"/>
+<span>Feed</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Search" src="./assets/08-handover-feedback/search-icon.svg"/>
+<span>Search</span>
+</a>
+<a class="tab-item fab-tab" href="05-create-listing.html">
+<div class="fab-btn">
+<img alt="Add" src="./assets/08-handover-feedback/add-icon.svg"/>
+</div>
+</a>
+<a class="tab-item" href="12-my-listings.html">
+<img alt="Activity" src="./assets/08-handover-feedback/activity-icon.svg"/>
+<span>Activity</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Profile" src="./assets/08-handover-feedback/profile-icon-1.svg"/>
+<span>Profile</span>
+</a>
+</nav>
+</body>
+</html>
