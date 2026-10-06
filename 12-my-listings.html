@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SurplusLink - My Listings</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="12-my-listings.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topbar">
+<div class="logo">
+<img alt="SurplusLink Logo" class="logo-icon" src="./assets/12-my-listings/surpluslink-logo-logo.png"/>
+            SurplusLink
+        </div>
+<nav class="desktop-nav">
+<a href="03-feed.html">Feed</a>
+<a class="active" href="12-my-listings.html">My Listings</a>
+<a href="05-create-listing.html">Create Listing</a>
+<a href="09-provider-analytics.html">Analytics</a>
+<a href="11-leaderboard.html">Leaderboard</a>
+</nav>
+<div class="user-menu desktop-only">
+<img alt="Profile" class="avatar" src="./assets/12-my-listings/profile-avatar.png"/>
+<img alt="Menu" class="chevron" src="./assets/12-my-listings/menu-icon.svg"/>
+</div>
+<div class="mobile-menu mobile-only">
+<img alt="Profile" class="avatar" src="./assets/12-my-listings/profile-avatar-1.png"/>
+</div>
+</header>
+<main class="container">
+<div class="page-header flex-between mb-32">
+<div>
+<h1 class="page-title">My listings</h1>
+<p class="subtitle">Manage the surplus food you have posted</p>
+</div>
+<a class="btn btn-primary desktop-only" href="05-create-listing.html">&uparrow; New listing</a>
+</div>
+<div class="filters-scroll mb-32">
+<button class="filter active">Active <span class="badge">4</span></button>
+<button class="filter">Reserved 2</button>
+<button class="filter">Completed 18</button>
+<button class="filter">Expired 3</button>
+</div>
+<div class="layout-grid">
+<!-- Left Col (Listings) -->
+<div class="listings-col">
+<!-- Mobile only quick stats row (similar to desktop right col) -->
+<div class="mobile-stats-row mobile-only mb-24">
+<div class="stat-box">
+<img alt="Listed" src="./assets/12-my-listings/listed-icon.svg"/>
+<div class="stat-val">4</div>
+<div class="stat-label">Listed</div>
+</div>
+<div class="stat-box">
+<img alt="Reserved" src="./assets/12-my-listings/reserved-icon.svg"/>
+<div class="stat-val">2</div>
+<div class="stat-label">Reserved</div>
+</div>
+<div class="stat-box">
+<img alt="Rescued" src="./assets/12-my-listings/rescued-icon.svg"/>
+<div class="stat-val">18</div>
+<div class="stat-label">Rescued</div>
+</div>
+</div>
+<div class="listings-list">
+<!-- Listing 1 (Active with request) -->
+<div class="card listing-row-card">
+<div class="card-inner flex-gap-24">
+<img alt="Veg Biryani" class="food-thumb" src="./assets/12-my-listings/veg-biryani-image.jpg"/>
+<div class="listing-details flex-1">
+<div class="flex-between mb-4">
+<h3 class="food-title">Veg Biryani</h3>
+<span class="status-text text-brand">Active</span>
+</div>
+<div class="helper mb-16">Cooked Meal • Today 4:00 PM – 6:00 PM</div>
+<div class="progress-section mb-16">
+<div class="flex-between helper mb-4 font-semibold">
+<span class="text-ink">12 of 20 portions</span>
+<span>60% remaining</span>
+</div>
+<div class="bar"><span style="width: 60%;"></span></div>
+</div>
+<div class="chips-row">
+<span class="chip chip-critical"><img alt="Time" src="./assets/12-my-listings/time-icon.svg"/> 42m left</span>
+<span class="chip chip-info"><img alt="Users" src="./assets/12-my-listings/users-icon.svg"/> 3 pending</span>
+</div>
+</div>
+<div class="actions-col desktop-only">
+<button class="btn btn-secondary btn-block mb-12"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon.svg"/> Edit</button>
+<button class="btn btn-danger-outline btn-block">Close listing</button>
+</div>
+</div>
+<!-- Highlighted Request Alert -->
+<div class="request-alert mt-16">
+<div class="alert-text">
+<img alt="Heart" src="./assets/12-my-listings/heart-icon.svg"/> Request from <strong>Helping Hands Foundation</strong>
+</div>
+<div class="alert-actions">
+<button class="btn btn-primary">Approve</button>
+<button class="btn btn-secondary">Decline</button>
+</div>
+</div>
+<div class="actions-row mobile-only mt-16 pt-16 border-top">
+<button class="btn btn-secondary flex-1"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon-1.svg"/> Edit</button>
+<button class="btn btn-danger-outline flex-1">Close listing</button>
+</div>
+</div>
+<!-- Listing 2 -->
+<div class="card listing-row-card">
+<div class="card-inner flex-gap-24">
+<img alt="Sandwiches" class="food-thumb" src="./assets/12-my-listings/sandwiches-image.jpg"/>
+<div class="listing-details flex-1">
+<div class="flex-between mb-4">
+<h3 class="food-title">Sandwiches</h3>
+<span class="status-text text-brand">Active</span>
+</div>
+<div class="helper mb-16">Ready to Eat • Today 5:00 PM – 7:00 PM</div>
+<div class="progress-section mb-16">
+<div class="flex-between helper mb-4 font-semibold">
+<span class="text-ink">8 of 15 portions</span>
+<span>53% left</span>
+</div>
+<div class="bar"><span style="width: 53%;"></span></div>
+</div>
+<div class="chips-row">
+<span class="chip chip-soon"><img alt="Time" src="./assets/12-my-listings/time-icon-1.svg"/> 1h 50m left</span>
+<span class="chip chip-info"><img alt="Users" src="./assets/12-my-listings/users-icon-1.svg"/> 3 pending</span>
+</div>
+</div>
+<div class="actions-col desktop-only">
+<button class="btn btn-secondary btn-block mb-12"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon-2.svg"/> Edit</button>
+<button class="btn btn-danger-outline btn-block">Close listing</button>
+</div>
+</div>
+<div class="actions-row mobile-only mt-16 pt-16 border-top">
+<button class="btn btn-secondary flex-1"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon-3.svg"/> Edit</button>
+<button class="btn btn-danger-outline flex-1">Close listing</button>
+</div>
+</div>
+<!-- Listing 3 -->
+<div class="card listing-row-card">
+<div class="card-inner flex-gap-24">
+<img alt="Fresh Fruits" class="food-thumb" src="./assets/12-my-listings/fresh-fruits-image.jpg"/>
+<div class="listing-details flex-1">
+<div class="flex-between mb-4">
+<h3 class="food-title">Fresh Fruits</h3>
+<span class="status-text text-brand">Active</span>
+</div>
+<div class="helper mb-16">Raw Food • Today 6:00 PM – 8:00 PM</div>
+<div class="progress-section mb-16">
+<div class="flex-between helper mb-4 font-semibold">
+<span class="text-ink">5 of 10 portions</span>
+<span>50% left</span>
+</div>
+<div class="bar"><span style="width: 50%;"></span></div>
+</div>
+<div class="chips-row">
+<span class="chip chip-fresh"><img alt="Time" src="./assets/12-my-listings/time-icon-2.svg"/> 4h left</span>
+<span class="chip chip-info"><img alt="Users" src="./assets/12-my-listings/users-icon-2.svg"/> 3 pending</span>
+</div>
+</div>
+<div class="actions-col desktop-only">
+<button class="btn btn-secondary btn-block mb-12"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon-4.svg"/> Edit</button>
+<button class="btn btn-danger-outline btn-block">Close listing</button>
+</div>
+</div>
+<div class="actions-row mobile-only mt-16 pt-16 border-top">
+<button class="btn btn-secondary flex-1"><img alt="Edit" class="icon-sm" src="./assets/12-my-listings/edit-icon-5.svg"/> Edit</button>
+<button class="btn btn-danger-outline flex-1">Close listing</button>
+</div>
+</div>
+<!-- Listing 4 (Expired) -->
+<div class="card listing-row-card opacity-70">
+<div class="card-inner flex-gap-24">
+<img alt="Bakery Items" class="food-thumb grayscale" src="./assets/12-my-listings/bakery-items-image.jpg"/>
+<div class="listing-details flex-1">
+<div class="flex-between mb-4">
+<h3 class="food-title text-muted">Bakery Items</h3>
+<span class="status-text text-muted">Expired</span>
+</div>
+<div class="helper mb-16">Baked Goods • Yesterday 4:00 PM – 6:00 PM</div>
+<div class="progress-section mb-16">
+<div class="flex-between helper mb-4 font-semibold text-muted">
+<span>0 of 12 portions</span>
+<span>Ended</span>
+</div>
+</div>
+<div class="chips-row">
+<span class="chip chip-expired"><img alt="Time" src="./assets/12-my-listings/time-icon-3.svg"/> Expired</span>
+</div>
+</div>
+<div class="actions-col desktop-only">
+<button class="btn btn-secondary btn-block mb-12"><img alt="Relist" class="icon-sm" src="./assets/12-my-listings/relist-icon.svg"/> Relist</button>
+<button class="btn btn-ghost btn-block">Archive</button>
+</div>
+</div>
+<div class="actions-row mobile-only mt-16 pt-16 border-top">
+<button class="btn btn-secondary flex-1"><img alt="Relist" class="icon-sm" src="./assets/12-my-listings/relist-icon-1.svg"/> Relist</button>
+<button class="btn btn-ghost flex-1">Archive</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Col (Stats) Desktop Only -->
+<div class="side-col desktop-only">
+<div class="card stats-card">
+<h3 class="section-title mb-24">Today at a glance</h3>
+<div class="stat-list">
+<div class="stat-item bg-brand-soft">
+<div class="stat-icon bg-brand-light"><img alt="List" src="./assets/12-my-listings/list-icon.svg"/></div>
+<span class="stat-name">Listed</span>
+<span class="stat-count text-brand">4</span>
+</div>
+<div class="stat-item bg-blue-soft">
+<div class="stat-icon bg-blue-light"><img alt="Res" src="./assets/12-my-listings/res-icon.svg"/></div>
+<span class="stat-name">Reserved</span>
+<span class="stat-count text-blue">2</span>
+</div>
+<div class="stat-item bg-purple-soft">
+<div class="stat-icon bg-purple-light"><img alt="Rescue" src="./assets/12-my-listings/rescue-icon.svg"/></div>
+<span class="stat-name">Rescued</span>
+<span class="stat-count text-purple">18</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Mobile Action Button -->
+<a class="fab-mobile mobile-only" href="05-create-listing.html">
+        &uparrow; New listing
+    </a>
+<!-- Mobile Bottom Tab Bar -->
+<nav class="bottom-tab-bar mobile-only">
+<a class="tab-item" href="03-feed.html">
+<img alt="Feed" src="./assets/12-my-listings/feed-icon.svg"/>
+<span>Feed</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Search" src="./assets/12-my-listings/search-icon.svg"/>
+<span>Search</span>
+</a>
+<a class="tab-item fab-tab" href="05-create-listing.html">
+<div class="fab-btn">
+<img alt="Add" src="./assets/12-my-listings/add-icon.svg"/>
+</div>
+</a>
+<a class="tab-item active" href="12-my-listings.html">
+<img alt="Activity" src="./assets/12-my-listings/activity-icon.svg"/>
+<span>Activity</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Profile" src="./assets/12-my-listings/profile-icon.svg"/>
+<span>Profile</span>
+</a>
+</nav>
+</body>
+</html>
