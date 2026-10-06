@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurplusLink - Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="03-feed.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="SurplusLink Logo" class="logo-icon">
+            SurplusLink
+        </div>
+        <nav class="desktop-nav">
+            <a href="03-feed.html" class="active">Feed</a>
+            <a href="05-create-listing.html">Create Listing</a>
+            <a href="09-provider-analytics.html">Analytics</a>
+            <a href="11-leaderboard.html">Leaderboard</a>
+        </nav>
+        <div class="user-menu desktop-only">
+            <img src="./assets/avatar.png" alt="Profile" class="avatar">
+            <img src="./assets/chevron-down.svg" alt="Menu" class="chevron">
+        </div>
+        <div class="mobile-menu mobile-only">
+            <img src="./assets/avatar.png" alt="Profile" class="avatar">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters-header">
+            <div class="filters-scroll">
+                <button class="filter active">All</button>
+                <button class="filter">Bakery</button>
+                <button class="filter">Cafeteria</button>
+                <button class="filter">Hostel</button>
+                <button class="filter">Veg only</button>
+                <button class="filter desktop-only">Within 2 km</button>
+            </div>
+            <div class="feed-meta">
+                <span class="results-count mobile-only">Available Surpluses (6 nearby)</span>
+                <select class="sort-select">
+                    <option>Soonest expiry</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="feed-grid">
+            <!-- Card 1 -->
+            <div class="card listing-card">
+                <div class="image-wrapper">
+                    <img src="./assets/food1.jpg" alt="Bakery Bread">
+                    <div class="chip chip-critical badge-top-right">
+                        <img src="./assets/clock-red.svg" alt="Time"> 42m left
+                    </div>
+                </div>
+                <div class="body">
+                    <h3 class="card-title">Assorted Bakery Bread</h3>
+                    <p class="card-subtitle">Campus Bakery <span class="badge-verified">✓ Verified</span></p>
+                    
+                    <div class="card-meta">
+                        <span><img src="./assets/box.svg" alt="Qty"> 12 portions</span>
+                        <span>•</span>
+                        <span><img src="./assets/map-pin.svg" alt="Dist"> 1.2 km</span>
+                        <span>•</span>
+                        <span><img src="./assets/user.svg" alt="Walk"> 8 min away</span>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <span class="status-reachable"><img src="./assets/check-green.svg" alt="Ok"> Reachable in time</span>
+                        <a href="04-listing-detail.html" class="btn btn-primary">Claim Portion</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card listing-card">
+                <div class="image-wrapper">
+                    <img src="./assets/food2.jpg" alt="Veg Lunch">
+                    <div class="chip chip-soon badge-top-right">
+                        <img src="./assets/clock-yellow.svg" alt="Time"> 1h 50m left
+                    </div>
+                </div>
+                <div class="body">
+                    <h3 class="card-title">Cafeteria Veg Lunch</h3>
+                    <p class="card-subtitle">Tech Park Cafeteria <span class="badge-verified">✓ Verified</span></p>
+                    
+                    <div class="card-meta">
+                        <span><img src="./assets/box.svg" alt="Qty"> 12 portions</span>
+                        <span>•</span>
+                        <span><img src="./assets/map-pin.svg" alt="Dist"> 1.2 km</span>
+                        <span>•</span>
+                        <span><img src="./assets/user.svg" alt="Walk"> 8 min away</span>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <span class="status-reachable"><img src="./assets/check-green.svg" alt="Ok"> Reachable in time</span>
+                        <a href="04-listing-detail.html" class="btn btn-primary">Claim Portion</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card listing-card">
+                <div class="image-wrapper">
+                    <img src="./assets/food3.jpg" alt="Hostel Dinner">
+                    <div class="chip chip-fresh badge-top-right">
+                        <img src="./assets/clock-green.svg" alt="Time"> 4h left
+                    </div>
+                </div>
+                <div class="body">
+                    <h3 class="card-title">Hostel Dinner (Home Style)</h3>
+                    <p class="card-subtitle">Green Hostel <span class="badge-verified">✓ Verified</span></p>
+                    
+                    <div class="card-meta">
+                        <span><img src="./assets/box.svg" alt="Qty"> 12 portions</span>
+                        <span>•</span>
+                        <span><img src="./assets/map-pin.svg" alt="Dist"> 1.2 km</span>
+                        <span>•</span>
+                        <span><img src="./assets/user.svg" alt="Walk"> 8 min away</span>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <span class="status-reachable"><img src="./assets/check-green.svg" alt="Ok"> Reachable in time</span>
+                        <a href="04-listing-detail.html" class="btn btn-primary">Claim Portion</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card listing-card">
+                <div class="image-wrapper">
+                    <img src="./assets/food4.jpg" alt="Pastries">
+                    <div class="chip chip-soon badge-top-right">
+                        <img src="./assets/clock-yellow.svg" alt="Time"> 1h 20m left
+                    </div>
+                </div>
+                <div class="body">
+                    <h3 class="card-title">Fresh Pastries & Muffins</h3>
+                    <p class="card-subtitle">City Bakery <span class="badge-verified">✓ Verified</span></p>
+                    
+                    <div class="card-meta">
+                        <span><img src="./assets/box.svg" alt="Qty"> 12 portions</span>
+                        <span>•</span>
+                        <span><img src="./assets/map-pin.svg" alt="Dist"> 1.2 km</span>
+                        <span>•</span>
+                        <span><img src="./assets/user.svg" alt="Walk"> 8 min away</span>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <span class="status-reachable"><img src="./assets/check-green.svg" alt="Ok"> Reachable in time</span>
+                        <a href="04-listing-detail.html" class="btn btn-primary">Claim Portion</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Mobile Bottom Tab Bar -->
+    <nav class="bottom-tab-bar mobile-only">
+        <a href="03-feed.html" class="tab-item active">
+            <img src="./assets/home-active.svg" alt="Feed">
+            <span>Feed</span>
+        </a>
+        <a href="#" class="tab-item">
+            <img src="./assets/search.svg" alt="Search">
+            <span>Search</span>
+        </a>
+        <a href="05-create-listing.html" class="tab-item fab-tab">
+            <div class="fab-btn">
+                <img src="./assets/plus-white.svg" alt="Add">
+            </div>
+        </a>
+        <a href="12-my-listings.html" class="tab-item">
+            <img src="./assets/activity.svg" alt="Activity">
+            <span>Activity</span>
+        </a>
+        <a href="#" class="tab-item">
+            <img src="./assets/profile.svg" alt="Profile">
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>
