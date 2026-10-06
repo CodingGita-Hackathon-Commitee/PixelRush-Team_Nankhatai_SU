@@ -1,171 +1,153 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SurplusLink - Listing Detail</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="04-listing-detail.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SurplusLink - Listing Detail</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="04-listing-detail.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="topbar desktop-only">
-        <div class="logo">
-            <img src="./assets/logo.png" alt="SurplusLink Logo" class="logo-icon">
+<header class="topbar">
+<div class="logo">
+<img alt="SurplusLink Logo" class="logo-icon" src="./assets/04-listing-detail/surpluslink-logo-logo.png"/>
             SurplusLink
         </div>
-        <nav class="desktop-nav">
-            <a href="12-my-listings.html">Dashboard</a>
-            <a href="12-my-listings.html" class="active">My Listings</a>
-            <a href="#">Messages</a>
-            <a href="10-ngo-profile.html">NGOs</a>
-        </nav>
-        <div class="user-menu">
-            <img src="./assets/bell.svg" alt="Notifications">
-            <div class="avatar-dropdown">
-                <div class="avatar-circle">Y</div>
-                <span>Yatra</span>
-                <img src="./assets/chevron-down.svg" alt="Menu">
-            </div>
-        </div>
-    </header>
-
-    <div class="mobile-header mobile-only">
-        <a href="03-feed.html" class="back-btn"><img src="./assets/arrow-left.svg" alt="Back"></a>
-        <div class="header-logo"><img src="./assets/logo.png" alt="Logo"> SurplusLink</div>
-        <button class="share-btn"><img src="./assets/share.svg" alt="Share"></button>
-    </div>
-
-    <main class="container page-layout">
-        <div class="content-left">
-            <a href="03-feed.html" class="back-link desktop-only">
-                <img src="./assets/arrow-left.svg" alt="Back"> Back to listings
+<nav class="desktop-nav">
+<a href="03-feed.html">Feed</a>
+<a href="12-my-listings.html">My Listings</a>
+<a href="05-create-listing.html">Create Listing</a>
+<a href="09-provider-analytics.html">Analytics</a>
+<a href="11-leaderboard.html">Leaderboard</a>
+</nav>
+<div class="user-menu desktop-only">
+<img alt="Profile" class="avatar" src="./assets/04-listing-detail/profile-avatar.png"/>
+<img alt="Menu" class="chevron" src="./assets/04-listing-detail/menu-icon.svg"/>
+</div>
+<div class="mobile-menu mobile-only">
+<img alt="Profile" class="avatar" src="./assets/04-listing-detail/profile-avatar-1.png"/>
+</div>
+</header>
+<main class="container page-layout">
+<div class="content-left">
+<a class="back-link desktop-only" href="03-feed.html">
+<img alt="Back" src="./assets/04-listing-detail/back-icon.svg"/> Back to listings
             </a>
-
-            <div class="image-gallery">
-                <img src="./assets/pastries-large.jpg" alt="Fresh sourdough and pastries" class="main-image">
-                <div class="chip chip-critical mobile-chip mobile-only">
-                    <img src="./assets/clock-red.svg" alt="Time"> 1h 12m left
+<div class="image-gallery">
+<img alt="Fresh sourdough and pastries" class="main-image" src="./assets/04-listing-detail/fresh-sourdough-and-pastries-image.jpg"/>
+<div class="chip chip-critical mobile-chip mobile-only">
+<img alt="Time" src="./assets/04-listing-detail/time-icon.svg"/> 1h 12m left
                 </div>
-            </div>
-
-            <h1 class="page-title">Fresh sourdough and pastries</h1>
-            <p class="post-time desktop-only">Listed 45 minutes ago • Artisanal bakery leftovers</p>
-
-            <div class="provider-profile">
-                <div class="avatar-large">S</div>
-                <div class="provider-info">
-                    <div class="provider-name">Sarah Baker <span class="badge-verified">✓ Verified</span></div>
-                    <div class="provider-meta">Local Bakery • <span class="rating">★ 4.8</span> (32 ratings)</div>
+</div>
+<h1 class="page-title">Fresh sourdough and pastries</h1>
+<p class="post-time desktop-only">Listed 45 minutes ago • Artisanal bakery leftovers</p>
+<div class="provider-profile">
+<div class="avatar-large">S</div>
+<div class="provider-info">
+<div class="provider-name">Sarah Baker <span class="badge-verified">✓ Verified</span></div>
+<div class="provider-meta">Local Bakery • <span class="rating">★ 4.8</span> (32 ratings)</div>
+</div>
+<button class="btn btn-secondary icon-btn"><img alt="Message" src="./assets/04-listing-detail/message-icon.svg"/></button>
+</div>
+<div class="mobile-only">
+<div class="progress-section">
+<div class="progress-labels">
+<span>Quantity remaining</span>
+<span class="font-semibold">18 / 25 portions</span>
+</div>
+<div class="bar"><span style="width: 72%;"></span></div>
+<div class="progress-footer">
+<span>72% of total batch left</span>
+<span class="text-brand">High availability</span>
+</div>
+</div>
+</div>
+<div class="info-grid">
+<div class="info-box">
+<div class="box-label"><img alt="Qty" src="./assets/04-listing-detail/qty-icon.svg"/> Quantity left</div>
+<div class="box-value">18 portions</div>
+</div>
+<div class="info-box">
+<div class="box-label"><img alt="Time" src="./assets/04-listing-detail/time-icon-1.svg"/> Pickup window</div>
+<div class="box-value">6:00 – 7:30 PM</div>
+<div class="box-sub">Today</div>
+</div>
+<div class="info-box">
+<div class="box-label"><img alt="Map" src="./assets/04-listing-detail/map-icon.svg"/> Distance</div>
+<div class="box-value">1.2 km away</div>
+</div>
+<div class="info-box">
+<div class="box-label"><img alt="Direction" src="./assets/04-listing-detail/direction-icon.svg"/> Directions</div>
+<div class="box-value"><a class="brand-link" href="#">View on map ↗</a></div>
+</div>
+</div>
+<div class="safety-card">
+<h3 class="section-title"><img alt="Shield" src="./assets/04-listing-detail/shield-icon.svg"/> Food safety &amp; dietary</h3>
+<div class="tags-group">
+<span class="tag tag-green"><img alt="Veg" src="./assets/04-listing-detail/veg-icon.svg"/> Veg / Vegetarian</span>
+</div>
+<div class="allergens-section">
+<div class="label-text">Allergens</div>
+<div class="tags-group">
+<span class="tag">Gluten</span>
+<span class="tag">Dairy</span>
+<span class="tag">Egg</span>
+</div>
+</div>
+<div class="storage-info">
+<div class="storage-header">
+<div class="label-text"><img alt="Cal" src="./assets/04-listing-detail/cal-icon.svg"/> Storage instructions</div>
+<div class="label-muted">Prepared 3:00 PM</div>
+</div>
+<p>Keep refrigerated. Best consumed within 2 days. Sourdough can be frozen or toasted.</p>
+</div>
+</div>
+</div>
+<div class="content-right desktop-only">
+<div class="sticky-card">
+<div class="chip chip-critical badge-top-right">
+<img alt="Time" src="./assets/04-listing-detail/time-icon-2.svg"/> 1h 12m left
                 </div>
-                <button class="btn btn-secondary icon-btn"><img src="./assets/message.svg" alt="Message"></button>
-            </div>
-
-            <div class="mobile-only">
-                <div class="progress-section">
-                    <div class="progress-labels">
-                        <span>Quantity remaining</span>
-                        <span class="font-semibold">18 / 25 portions</span>
-                    </div>
-                    <div class="bar"><span style="width: 72%;"></span></div>
-                    <div class="progress-footer">
-                        <span>72% of total batch left</span>
-                        <span class="text-brand">High availability</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-box">
-                    <div class="box-label"><img src="./assets/box.svg" alt="Qty"> Quantity left</div>
-                    <div class="box-value">18 portions</div>
-                </div>
-                <div class="info-box">
-                    <div class="box-label"><img src="./assets/clock.svg" alt="Time"> Pickup window</div>
-                    <div class="box-value">6:00 – 7:30 PM</div>
-                    <div class="box-sub">Today</div>
-                </div>
-                <div class="info-box">
-                    <div class="box-label"><img src="./assets/map-pin.svg" alt="Map"> Distance</div>
-                    <div class="box-value">1.2 km away</div>
-                </div>
-                <div class="info-box">
-                    <div class="box-label"><img src="./assets/map.svg" alt="Direction"> Directions</div>
-                    <div class="box-value"><a href="#" class="brand-link">View on map ↗</a></div>
-                </div>
-            </div>
-
-            <div class="safety-card">
-                <h3 class="section-title"><img src="./assets/shield.svg" alt="Shield"> Food safety & dietary</h3>
-
-                <div class="tags-group">
-                    <span class="tag tag-green"><img src="./assets/leaf-green.svg" alt="Veg"> Veg / Vegetarian</span>
-                </div>
-
-                <div class="allergens-section">
-                    <div class="label-text">Allergens</div>
-                    <div class="tags-group">
-                        <span class="tag">Gluten</span>
-                        <span class="tag">Dairy</span>
-                        <span class="tag">Egg</span>
-                    </div>
-                </div>
-
-                <div class="storage-info">
-                    <div class="storage-header">
-                        <div class="label-text"><img src="./assets/calendar.svg" alt="Cal"> Storage instructions</div>
-                        <div class="label-muted">Prepared 3:00 PM</div>
-                    </div>
-                    <p>Keep refrigerated. Best consumed within 2 days. Sourdough can be frozen or toasted.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-right desktop-only">
-            <div class="sticky-card">
-                <div class="chip chip-critical badge-top-right">
-                    <img src="./assets/clock-red.svg" alt="Time"> 1h 12m left
-                </div>
-
-                <div class="progress-section">
-                    <div class="progress-labels">
-                        <span>Quantity remaining</span>
-                        <span class="font-semibold">18 / 25 portions</span>
-                    </div>
-                    <div class="bar"><span style="width: 72%;"></span></div>
-                </div>
-
-                <a href="06-request-food.html" class="btn btn-primary btn-block btn-lg mt-24">Request this food →</a>
-                <p class="helper-text text-center mt-12">Free for verified recipients & local NGOs</p>
-            </div>
-        </div>
-    </main>
-
-    <div class="mobile-bottom-bar mobile-only">
-        <a href="06-request-food.html" class="btn btn-primary btn-block btn-lg">Request this food →</a>
-        <p class="helper-text text-center mt-12">Free for verified recipients & local NGOs</p>
-    </div>
-
-    <!-- Mobile Bottom Tab Bar -->
-    <nav class="bottom-tab-bar mobile-only">
-        <a href="#" class="tab-item">
-            <img src="./assets/grid.svg" alt="Dashboard">
-            <span>Dashboard</span>
-        </a>
-        <a href="12-my-listings.html" class="tab-item active">
-            <img src="./assets/list-active.svg" alt="Listings">
-            <span>Listings</span>
-        </a>
-        <a href="#" class="tab-item">
-            <img src="./assets/message.svg" alt="Messages">
-            <span>Messages</span>
-        </a>
-        <a href="10-ngo-profile.html" class="tab-item">
-            <img src="./assets/users.svg" alt="NGOs">
-            <span>NGOs</span>
-        </a>
-    </nav>
+<div class="progress-section">
+<div class="progress-labels">
+<span>Quantity remaining</span>
+<span class="font-semibold">18 / 25 portions</span>
+</div>
+<div class="bar"><span style="width: 72%;"></span></div>
+</div>
+<a class="btn btn-primary btn-block btn-lg mt-24" href="06-request-food.html">Request this food →</a>
+<p class="helper-text text-center mt-12">Free for verified recipients &amp; local NGOs</p>
+</div>
+</div>
+</main>
+<div class="mobile-bottom-bar mobile-only">
+<a class="btn btn-primary btn-block btn-lg" href="06-request-food.html">Request this food →</a>
+<p class="helper-text text-center mt-12">Free for verified recipients &amp; local NGOs</p>
+</div>
+<!-- Mobile Bottom Tab Bar -->
+<nav class="bottom-tab-bar mobile-only">
+<a class="tab-item" href="03-feed.html">
+<img alt="Feed" src="./assets/04-listing-detail/feed-icon.svg"/>
+<span>Feed</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Search" src="./assets/04-listing-detail/search-icon.svg"/>
+<span>Search</span>
+</a>
+<a class="tab-item fab-tab" href="05-create-listing.html">
+<div class="fab-btn">
+<img alt="Add" src="./assets/04-listing-detail/add-icon.svg"/>
+</div>
+</a>
+<a class="tab-item" href="12-my-listings.html">
+<img alt="Activity" src="./assets/04-listing-detail/activity-icon.svg"/>
+<span>Activity</span>
+</a>
+<a class="tab-item" href="#">
+<img alt="Profile" src="./assets/04-listing-detail/profile-icon.svg"/>
+<span>Profile</span>
+</a>
+</nav>
 </body>
-
 </html>
