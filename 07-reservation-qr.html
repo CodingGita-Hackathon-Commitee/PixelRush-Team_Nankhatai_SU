@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurplusLink - Your food is reserved</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="07-reservation-qr.css">
+</head>
+<body>
+    <header class="topbar desktop-only">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="SurplusLink Logo" class="logo-icon">
+            SurplusLink
+        </div>
+        <nav class="desktop-nav">
+            <a href="03-feed.html"><img src="./assets/home.svg" alt="Home"> Home</a>
+            <a href="#" class="active"><img src="./assets/calendar-active.svg" alt="Reservations"> My Reservations</a>
+            <a href="#"><img src="./assets/search.svg" alt="Browse"> Browse</a>
+            <a href="#"><img src="./assets/user.svg" alt="Profile"> Profile</a>
+        </nav>
+        <div class="user-menu">
+            <div class="avatar-dropdown">
+                <div class="avatar-circle">DK</div>
+                <span>Daksh Khandelwal</span>
+                <img src="./assets/chevron-down.svg" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-header mobile-only">
+        <div class="header-logo">
+            <img src="./assets/logo.png" alt="Logo" class="logo-icon"> SurplusLink
+        </div>
+        <div class="avatar-circle">DK</div>
+    </div>
+
+    <main class="container">
+        <div class="reservation-card">
+            <div class="success-icon-large">
+                <img src="./assets/check-white-large.svg" alt="Success">
+            </div>
+            
+            <h1 class="page-title">Your food is reserved</h1>
+            
+            <div class="chip chip-soon mb-24">
+                <img src="./assets/clock-yellow.svg" alt="Time"> Held for 28:45
+            </div>
+            
+            <p class="reservation-desc">
+                You've successfully reserved 6 portions. Please pick up within the time window or your reservation may be released.
+            </p>
+            
+            <div class="qr-layout">
+                <div class="qr-section">
+                    <img src="./assets/qr-code.png" alt="QR Code" class="qr-image">
+                    <div class="pickup-code-label">Pickup code</div>
+                    <div class="pickup-code">SL-4821</div>
+                </div>
+                
+                <div class="details-section">
+                    <div class="detail-row">
+                        <img src="./assets/box.svg" alt="Qty" class="detail-icon">
+                        <div>
+                            <span class="detail-label">Reserved quantity</span>
+                            <span class="detail-value">6 portions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-row">
+                        <img src="./assets/clock.svg" alt="Time" class="detail-icon">
+                        <div>
+                            <span class="detail-label">Pickup window</span>
+                            <span class="detail-value">6:00 – 7:30 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-row">
+                        <img src="./assets/map-pin.svg" alt="Map" class="detail-icon">
+                        <div>
+                            <span class="detail-label">Address</span>
+                            <span class="detail-value">123 Green Valley Rd,<br>Bengaluru, KA 560076</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-row">
+                        <img src="./assets/store.svg" alt="Provider" class="detail-icon">
+                        <div>
+                            <span class="detail-label">Provider</span>
+                            <span class="detail-value">Fresh Bites Kitchen</span>
+                        </div>
+                    </div>
+                    
+                    <div class="reminder-box mt-24">
+                        <img src="./assets/info-blue.svg" alt="Info"> Reminder: arrive before 7:30 PM
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-actions">
+                <a href="#" class="btn btn-primary btn-lg flex-1 flex-center">
+                    <img src="./assets/navigation.svg" alt="Nav" class="btn-icon"> Get directions
+                </a>
+                <button class="btn btn-danger btn-lg flex-1 flex-center">
+                    <img src="./assets/trash-red.svg" alt="Cancel"> Cancel / release reservation
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Bottom Tab Bar -->
+    <nav class="bottom-tab-bar mobile-only">
+        <a href="03-feed.html" class="tab-item">
+            <img src="./assets/home.svg" alt="Feed">
+            <span>Feed</span>
+        </a>
+        <a href="#" class="tab-item">
+            <img src="./assets/search.svg" alt="Search">
+            <span>Search</span>
+        </a>
+        <a href="#" class="tab-item fab-tab">
+            <div class="fab-btn">
+                <img src="./assets/plus-white.svg" alt="Add">
+            </div>
+        </a>
+        <a href="#" class="tab-item active">
+            <img src="./assets/activity-active.svg" alt="Activity">
+            <span>Activity</span>
+        </a>
+        <a href="#" class="tab-item">
+            <img src="./assets/profile.svg" alt="Profile">
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>
