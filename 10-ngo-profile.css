@@ -1,3 +1,70 @@
+.topbar {
+    height: 72px;
+    background: #fff;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111827;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.desktop-nav a {
+    font: 500 14px 'Inter', sans-serif;
+    color: #6B7280;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav a.active {
+    color: #111827;
+    border-bottom: 2px solid #15803D;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chevron {
+    width: 16px;
+    height: 16px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -709,4 +776,16 @@ tr:last-child td {
     .tab-item.active img {
         opacity: 1;
     }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chevron {
+    width: 16px;
+    height: 16px;
 }

@@ -32,7 +32,7 @@
 <div class="dashboard-layout">
 <!-- Sidebar Navigation -->
 <aside class="sidebar desktop-only">
-<a class="btn btn-primary btn-block mb-24" href="05-create-listing.html">&uparrow; Add surplus food</a>
+<a class="btn btn-primary btn-block mb-24" href="05-create-listing.html">+ Add surplus food</a>
 <nav class="side-nav">
 <a href="#"><img alt="Dashboard" src="./assets/08-handover-feedback/dashboard-icon.svg"/> Dashboard</a>
 <a href="12-my-listings.html"><img alt="Listings" src="./assets/08-handover-feedback/listings-icon.svg"/> My listings</a>
@@ -88,18 +88,23 @@
 <div class="section mt-32">
 <h4 class="section-title">How was the food quality?</h4>
 <div class="rating-group">
-<button class="rating-btn">Poor</button>
-<button class="rating-btn">Okay</button>
-<button class="rating-btn">Good</button>
-<button class="rating-btn">Great</button>
-<button class="rating-btn active">Excellent</button>
+<input type="radio" name="rating" id="r1" class="hidden-radio" />
+<label for="r1" class="rating-btn">Poor</label>
+<input type="radio" name="rating" id="r2" class="hidden-radio" />
+<label for="r2" class="rating-btn">Okay</label>
+<input type="radio" name="rating" id="r3" class="hidden-radio" />
+<label for="r3" class="rating-btn">Good</label>
+<input type="radio" name="rating" id="r4" class="hidden-radio" />
+<label for="r4" class="rating-btn">Great</label>
+<input type="radio" name="rating" id="r5" class="hidden-radio" checked />
+<label for="r5" class="rating-btn">Excellent</label>
 </div>
 </div>
 <div class="section mt-24">
 <h4 class="section-title">Add an optional comment</h4>
 <textarea class="textarea" placeholder="Share your experience (optional)..."></textarea>
 </div>
-<button class="btn btn-primary btn-block btn-lg mt-24">Submit feedback</button>
+<a class="btn btn-primary btn-block btn-lg mt-24" href="03-feed.html">Submit feedback</a>
 </div>
 <!-- Right Column -->
 <div class="right-col">
@@ -110,7 +115,7 @@
 </div>
 <div class="chip chip-gray mb-16">Pickup window ended</div>
 <p class="helper mb-24">The pickup window has ended. You can relist the food if it's still available.</p>
-<button class="btn btn-secondary btn-block">Relist food</button>
+<a class="btn btn-secondary btn-block" href="05-create-listing.html">Relist food</a>
 </div>
 <div class="card mini-stat-card mobile-only mt-16">
 <div class="stat-mini">
