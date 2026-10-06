@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #374151;
+    background: #F8F9FA;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font: 600 12px 'Inter', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .15s;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: #15803D;
+    color: #fff;
+    height: 44px;
+    padding: 0 20px;
+}
+
+.btn-primary:hover {
+    background: #166534;
+}
+
+.btn-danger {
+    background: #fff;
+    color: #B91C1C;
+    border: 1px solid #FEE2E2;
+    height: 44px;
+    padding: 0 20px;
+}
+
+.btn-danger:hover {
+    background: #FEE2E2;
+}
+
+.btn-lg {
+    height: 52px;
+    font-size: 16px;
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+/* Topbar */
+.topbar {
+    height: 72px;
+    background: #fff;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111827;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.desktop-nav a {
+    font: 500 14px 'Inter', sans-serif;
+    color: #6B7280;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.desktop-nav a img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.desktop-nav a.active {
+    color: #15803D;
+    border-bottom: 2px solid #15803D;
+}
+
+.desktop-nav a.active img {
+    opacity: 1;
+    filter: sepia(1) hue-rotate(90deg) saturate(3);
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.avatar-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #111827;
+}
+
+.avatar-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #475569;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Reservation Card */
+.reservation-card {
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .06);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.success-icon-large {
+    width: 64px;
+    height: 64px;
+    background: #15803D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.success-icon-large img {
+    width: 32px;
+    height: 32px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.chip-soon {
+    background: #FEF3C7;
+    color: #B45309;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.reservation-desc {
+    font-size: 16px;
+    color: #374151;
+    max-width: 500px;
+    margin: 0 auto 48px;
+}
+
+.qr-layout {
+    display: flex;
+    gap: 48px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 48px;
+    align-items: center;
+}
+
+.qr-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F9FA;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #EAEAEA;
+}
+
+.qr-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+.pickup-code-label {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+
+.pickup-code {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: 0.05em;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.detail-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin-top: 2px;
+}
+
+.detail-label {
+    display: block;
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+
+.detail-value {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.reminder-box {
+    background: #EFF6FF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D4ED8;
+}
+
+.reminder-box img {
+    width: 16px;
+    height: 16px;
+}
+
+.card-actions {
+    gap: 8px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 100px;
+        background: #fff;
+    }
+
+    .mobile-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: #fff;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 0 12px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #111827;
+    }
+
+    .container {
+        padding: 80px 16px 24px;
+    }
+
+    .reservation-card {
+        padding: 24px 16px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .qr-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .qr-section {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .qr-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .card-actions {
+    gap: 8px;
+        flex-direction: column;
+    }
+
+    .bottom-tab-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: #fff;
+        border-top: 1px solid #EAEAEA;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 12px;
+        z-index: 1000;
+    }
+
+    .tab-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        color: #6B7280;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .tab-item img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.6;
+    }
+
+    .tab-item.active {
+        color: #15803D;
+    }
+
+    .tab-item.active img {
+        opacity: 1;
+    }
+
+    .fab-tab {
+        transform: translateY(-10px);
+    }
+
+    .fab-btn {
+        width: 48px;
+        height: 48px;
+        background: #15803D;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
+    }
+
+    .fab-btn img {
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chevron {
+    width: 16px;
+    height: 16px;
+}
