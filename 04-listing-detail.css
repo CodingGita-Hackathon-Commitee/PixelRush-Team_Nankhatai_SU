@@ -412,7 +412,7 @@ body {
     border: 1px solid #EAEAEA;
     border-radius: 16px;
     padding: 32px;
-    box-shadow: 0 12px 32px rgba(16,24,40,.12);
+    box-shadow: 0 12px 32px rgba(16, 24, 40, .12);
 }
 
 .badge-top-right {
